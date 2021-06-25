@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTitreAJouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter_une_nouvelle_todo"
+        android:textColor="@color/purple_500"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginBottom="25dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/llId"
+        android:layout_below="@id/tvTitreAJouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvLabelId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/id"
+            android:textSize="17sp"
+            android:textColor="@color/purple_500"></TextView>
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_id_hint_empty"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitre"
+        android:layout_below="@id/llId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvLabelTitre"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/titre"
+            android:textSize="17sp"
+            android:textColor="@color/purple_500"></TextView>
+
+        <EditText
+            android:id="@+id/etTitre"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_titre_hint_empty"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDescription"
+        android:layout_below="@id/llTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvLabelDescription"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="17sp"
+            android:textColor="@color/purple_500"></TextView>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_description_hint_empty"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDateExpiration"
+        android:layout_below="@id/llDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvLabelDateExpiration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/date_expiration"
+            android:textSize="17sp"
+            android:textColor="@color/purple_500"></TextView>
+
+        <EditText
+            android:id="@+id/etDateExpiration"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_expiration_hint_empty"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llStatus"
+        android:layout_below="@id/llDateExpiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvLabelStatus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:textSize="17sp"
+            android:textColor="@color/purple_500"></TextView>
+
+        <Spinner
+            android:id="@+id/spStatus"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:entries="@array/arr_status"
+            android:spinnerMode="dialog"></Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAjouter"
+        android:text="@string/ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"></Button>
+
+</RelativeLayout>

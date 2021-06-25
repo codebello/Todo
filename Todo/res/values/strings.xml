@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <string name="todo_existe">Todo Existe Déjà.</string>
+    <string name="todo_n_existe_pas">Todo n\'Existe pas.</string>
+    <string name="todo_ajouter">Ajouter Todo</string>
+    <string name="veuillez_ajouter_une_todo">Veuillez ajouter une Todo</string>
+    <string name="ajouter_une_nouvelle_todo">Ajouter une nouvelle Todo</string>
+    <string name="id">Id:</string>
+    <string name="titre">Titre:</string>
+    <string name="description">Description:</string>
+    <string name="date_expiration">Expiration:</string>
+    <string name="status">Status:</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="et_id_hint_empty">Merci de saisir l\'id.</string>
+    <string name="et_titre_hint_empty">Merci de siasir le titre.</string>
+    <string name="et_expiration_hint_empty">Merci de saisir la date d\'expiration (JJ/MM/AAAA)</string>
+    <string name="et_description_hint_empty">Merci de siasir la description</string>
+    <string name="toast_ok_false">Merci de bien renseigner les champs du formulaire.</string>
+    <string name="todo_bien_ajoute">Todo bien ajoutée.</string>
+    <string name="confirmation_oui">Confirmer</string>
+    <string name="confirmation_non">Annuler</string>
+    <string name="todo_bien_supprime">Todo bien supprimée.</string>
+    <string name="msg_confirmation">Voulez-vous bien supprimer cette todo?</string>
+    <string name="title_confirmation">Confirmation</string>
+
+    <string-array name="arr_status">
+        <item>Nouvelle</item>
+        <item>En cours</item>
+        <item>Terminée</item>
+    </string-array>
+</resources>
